@@ -1,9 +1,9 @@
 	var output = []
 	var test = [], arr = []
 	var fss = require('fs');
-	var wr = fss.createWriteStream('JSON/rob&bug.json')
+	var wr = fss.createWriteStream('../JSON/rob&bug.json')
 	var lineReader = require('readline').createInterface({
-	    input: require('fs').createReadStream('CSV/chicagocrimes.csv')
+	    input: require('fs').createReadStream('../CSV/chicagocrimes.csv')
 	})
 		lineReader.on('line', function(line) {
 	    var jsonFromLine = {};
@@ -41,6 +41,12 @@
 			burglary: x[j]
 		}
 		arr.push(obj)
+		var obj1 = {
+		data : obj;
+
 	}
+	}
+	
+	console.log(obj1)
 	wr.write(JSON.stringify(arr, null, 2))
 	});

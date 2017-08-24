@@ -1,9 +1,9 @@
 var output = []
 var arr = []
 var fss = require('fs');
-var wr = fss.createWriteStream('JSON/CDamage.json')
+var wr = fss.createWriteStream('../JSON/stackedBar.json')
 var lineReader = require('readline').createInterface({
-    input: require('fs').createReadStream('CSV/chicagocrimes.csv')
+    input: require('fs').createReadStream('../CSV/chicagocrimes.csv')
 });
 lineReader.on('line', function(line) {
     var jsonFromLine = {};
@@ -16,7 +16,7 @@ lineReader.on('line', function(line) {
     }
 });
 lineReader.on('close', function(line) {
-				var x = output.reduce((prop, data) => {
+                var x = output.reduce((prop, data) => {
         for (let k = 0; k < 16; k++) {
             if (data.description === 'TO PROPERTY') {
                 if (data.year == '200' + (1 + k)) prop[k]++
@@ -34,7 +34,7 @@ lineReader.on('close', function(line) {
         },[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0])
         var z = output.reduce((sprop, data) => {
         for (let k = 0; k < 16; k++) {
-            if (data.description === 'TO VEHICLE') {
+            if (data.description === 'TO STATE SUP PROP') {
                 if (data.year == '200' + (1 + k)) sprop[k]++
                     else if (data.year == '20' + (1 + k)) sprop[k]++
             }
@@ -43,9 +43,9 @@ lineReader.on('close', function(line) {
    for (let j = 0; j < 16; j++) {
         var obj = {
             year: j + 2001,
-            toStateSupProperty: x[j],
+            toStateSupProperty: z[j],
             toVehicle: y[j],
-         	  toProperty: z[j]
+              toProperty: x[j]
         }
         arr.push(obj)
     }

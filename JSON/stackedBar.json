@@ -1,0 +1,98 @@
+[
+  {
+    "year": 2001,
+    "toStateSupProperty": 550,
+    "toVehicle": 27003,
+    "toProperty": 27147
+  },
+  {
+    "year": 2002,
+    "toStateSupProperty": 534,
+    "toVehicle": 26794,
+    "toProperty": 26328
+  },
+  {
+    "year": 2003,
+    "toStateSupProperty": 494,
+    "toVehicle": 26543,
+    "toProperty": 24412
+  },
+  {
+    "year": 2004,
+    "toStateSupProperty": 383,
+    "toVehicle": 25020,
+    "toProperty": 24157
+  },
+  {
+    "year": 2005,
+    "toStateSupProperty": 334,
+    "toVehicle": 25601,
+    "toProperty": 24547
+  },
+  {
+    "year": 2006,
+    "toStateSupProperty": 307,
+    "toVehicle": 25948,
+    "toProperty": 25149
+  },
+  {
+    "year": 2007,
+    "toStateSupProperty": 253,
+    "toVehicle": 24226,
+    "toProperty": 23606
+  },
+  {
+    "year": 2008,
+    "toStateSupProperty": 229,
+    "toVehicle": 24918,
+    "toProperty": 22993
+  },
+  {
+    "year": 2009,
+    "toStateSupProperty": 193,
+    "toVehicle": 21834,
+    "toProperty": 20822
+  },
+  {
+    "year": 2010,
+    "toStateSupProperty": 170,
+    "toVehicle": 18787,
+    "toProperty": 17864
+  },
+  {
+    "year": 2011,
+    "toStateSupProperty": 143,
+    "toVehicle": 16896,
+    "toProperty": 16889
+  },
+  {
+    "year": 2012,
+    "toStateSupProperty": 164,
+    "toVehicle": 16429,
+    "toProperty": 16350
+  },
+  {
+    "year": 2013,
+    "toStateSupProperty": 142,
+    "toVehicle": 13783,
+    "toProperty": 14124
+  },
+  {
+    "year": 2014,
+    "toStateSupProperty": 133,
+    "toVehicle": 12634,
+    "toProperty": 12766
+  },
+  {
+    "year": 2015,
+    "toStateSupProperty": 127,
+    "toVehicle": 13586,
+    "toProperty": 13188
+  },
+  {
+    "year": 2016,
+    "toStateSupProperty": 33,
+    "toVehicle": 4084,
+    "toProperty": 3985
+  }
+]

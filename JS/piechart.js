@@ -1,9 +1,9 @@
 var output = []
 var arr = []
 var fss = require('fs')
-var wr = fss.createWriteStream('JSON/pieChart.json')
+var wr = fss.createWriteStream('../JSON/pieChart.json')
 var lineReader = require('readline').createInterface({
-    input: require('fs').createReadStream('CSV/chicagocrimes.csv')
+    input: require('fs').createReadStream('../CSV/chicagocrimes.csv')
 })
 lineReader.on('line', function(line) {
         var jsonFromLine = {}
@@ -28,17 +28,17 @@ lineReader.on('close', function(line) {
                                     if (data.description == 'AGGRAVATED') pc[7]++
 return pc
     }, [0, 0, 0, 0, 0, 0, 0, 0])
-        var obj = {
-            ARMED_OTHER_DANGEROUS_WEAPON:x[0],
-            STRONGARM_NO_WEAPON:x[1],
-            AGGRAVATED_VEHICULAR_HIJACKING:x[2],
-            ARMED_HANDGUN:x[3],
-            ATTEMPT_ARMED_OTHER_FIREARM:x[4],
-            ARMED_KNIFE_CUTTING_INSTRUMENT:x[5],
-            VEHICULAR_HIJACKING:x[6],
-            AGGRAVATED:x[7]
-        }
-        arr.push(obj)
-    
+
+    for(let j=0;j<8;j++){
+    	var data=x[j]
+    	if(j==0)arr.push({type:"ARMED_OTHER_DANGEROUS_WEAPON",total:data})
+      if(j==1)arr.push({type:"STRONGARM_NO_WEAPON",total:data})
+      if(j==2)arr.push({type:"AGGRAVATED_VEHICULAR_HIJACKING",total:data})
+      if(j==3)arr.push({type:"ARMED_HANDGUN",total:data})      
+      if(j==4)arr.push({type:"ATTEMPT_ARMED_OTHER_FIREARM",total:data})
+      if(j==5)arr.push({type:"ARMED_KNIFE_CUTTING_INSTRUMENT",total:data})
+      if(j==6)arr.push({type:"VEHICULAR_HIJACKING",total:data})
+      if(j==7)arr.push({type:"AGGRAVATED",total:data})
+        }    
     wr.write(JSON.stringify(arr, null, 2))
 })
