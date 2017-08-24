@@ -1,12 +1,34 @@
 [
   {
-    "ARMED_OTHER_DANGEROUS_WEAPON": 11425,
-    "STRONGARM_NO_WEAPON": 79718,
-    "AGGRAVATED_VEHICULAR_HIJACKING": 8104,
-    "ARMED_HANDGUN": 79371,
-    "ATTEMPT_ARMED_OTHER_FIREARM": 252,
-    "ARMED_KNIFE_CUTTING_INSTRUMENT": 10508,
-    "VEHICULAR_HIJACKING": 4210,
-    "AGGRAVATED": 11072
+    "type": "ARMED_OTHER_DANGEROUS_WEAPON",
+    "total": 11425
+  },
+  {
+    "type": "STRONGARM_NO_WEAPON",
+    "total": 79718
+  },
+  {
+    "type": "AGGRAVATED_VEHICULAR_HIJACKING",
+    "total": 8104
+  },
+  {
+    "type": "ARMED_HANDGUN",
+    "total": 79371
+  },
+  {
+    "type": "ATTEMPT_ARMED_OTHER_FIREARM",
+    "total": 252
+  },
+  {
+    "type": "ARMED_KNIFE_CUTTING_INSTRUMENT",
+    "total": 10508
+  },
+  {
+    "type": "VEHICULAR_HIJACKING",
+    "total": 4210
+  },
+  {
+    "type": "AGGRAVATED",
+    "total": 11072
   }
 ]
