@@ -1,0 +1,10 @@
+.line {
+    fill: none;
+    stroke: red;
+    stroke-width: 2px;
+}
+
+.line1 {
+    fill: none;
+    stroke: black;
+    stroke-width: 2px;
